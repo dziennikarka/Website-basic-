@@ -1,0 +1,214 @@
+body {font-family:'Amarante', cursive,sans-serif;
+      color:rgb(0, 0, 0);
+      background-color:rgba(17, 41, 227, 0.49);
+      -moz-hyphens:auto;
+      -ms-hyphens:auto;
+      -webkit-:hyphens:auto;
+      hyphens:auto;}
+
+h1 {font-family: 'Allura', cursive, sans-serif;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    text-shadow:1px 1px 0px white,
+                -1px 1px 0px white,
+                1px -1px 0px white,
+                -1px -1px 0px white;}
+
+h3 {text-align: center;}
+
+#mainstripe {background-color: rgb(19, 234, 187);}
+
+#logo{width:10%;}
+
+.columns img {width:80%;
+             max-width:550px;
+             display:block;
+             margin:auto;
+             border-radius:20px;}
+
+ul.valikko {background-color:rgb(204, 204, 204);
+            border:solid 1px rgb(4,117,164);
+            padding: 7px;
+            }
+
+ul.valikko li {font-family: 'Allura', cursive,sans-serif;
+               font-size: 30px;
+               font-weight: bold;
+               display:inline-block;
+              }
+
+ul.valikko li a {padding: 5px; 
+                 color: rgb(0, 0, 0);
+                 text-decoration: none;}
+
+ul.valikko li a:hover {background-color: rgba(17, 41, 227, 0.49);}
+
+ul.valikko a {display:inline-block;}
+ul.valikko a.active {color:black}
+
+.icon {display: none;}
+
+header, footer {text-align:center;}
+
+header img {vertical-align:middle;}
+
+.contactinfo {background-color: rgb(19, 234, 187);}
+
+/* **************************************************
+gallery.html 
+******************************************************   */
+
+.gallerypic img {width:80%;
+                 max-width:550px;
+                 display:block;
+                 margin:auto;
+                 border-radius:10%;}
+
+.gallerytext p {text-align:center;
+                color: pink;}
+
+
+/* *******************************************************
+contact.html
+******************************************************* */
+
+#personalinfo {border: solid 4px black;}
+
+
+/* *******************************************************
+FOOTER
+********************************************************** */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* ***************************************
+DISPLAY<360px
+****************************************** */
+@media only screen and (max-width:360px){
+    
+h1, h2, h3 {text-align:center}
+    
+#logo{display:none;}
+
+ul.valikko {display: none;}
+
+ul.valikko  li {width:100%;
+text-align:right;}
+    
+#picturecolumn {display:none;}
+    
+ul.valikko.responsive {display:block;position:absolute;
+width:100%;
+top:10px;
+z-index:1
+}
+
+ul.valikko.responsive li {display:inline}
+ 
+ul.valikko.responsive li a {
+    display: block;
+    text-align: left;
+  }   
+    
+.icon {position:absolute;
+z-index:2;right:2px;color:black;
+         text-decoration:none;
+          display:inline-block;
+         font-size:0.8em;
+         padding:0px 3px;
+          border:solid 1px blue;
+         background-color:rgb(164,209,211)}   
+}
+
+
+
+/* *********************************
+DISPLAY 361-767px 
+*********************************** */
+@media only screen and (min-width: 361px){
+    
+.column {flex:1;
+           padding-right:5px
+           }
+    
+ul.valikko a {text-align:center;
+             display:inline-block;
+   width:6.5em; }
+    
+}
+
+
+
+/* *********************************
+DISPLAY 768px-1640px
+************************************ */
+@media only screen and (min-width: 768px){
+
+section {column-count: 2;
+         column-gap: 20px;
+         column-rule: dashed 3px rgb(19, 234, 187);
+         margin:40px;
+         padding:5px}
+    
+.contact {background-color: bisque;
+          flex:1;
+          padding-right:5px
+           }
+    
+ul.valikko li {width:20%;}
+
+}
+
+/* ************************************** 
+DISPLAY > 1641px
+**************************************** */
+
+@media only screen and (min-width: 1641px){
+    
+section {column-count: 2;
+         column-gap: 20px;
+         column-rule: dashed 3px rgb(19, 234, 187);
+         margin:40px;
+         padding:5px}
+    
+ul.valikko li {width:20%;}
+    
+ul.valikko {box-sizing: border-box;
+            width: 50%;
+            border-radius: 40%;
+            margin:auto;}
+
+} 
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html> 	
+<html lang="en">
+<head>
+
+<title>Rento Tours Ltd</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<meta name="author" content="Irina Tregub">
+
+<link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet" type="text/css">    
+<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="tyyli.css" rel="stylesheet" type="text/css">
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("valikko");
+    if (x.className == "valikko") {
+        x.className += " responsive";
+    } else {
+        x.className = "valikko";
+    }
+}
+</script>
+
+</head>
+    
+
+
+<body>
+
+<header>
+
+  <div id="mainstripe">
+  <h1> <img id="logo" src="turisti1.png" alt="Rento Tours">
+   Rento Tours Ltd <a href="javascript:void(0);" onclick="myFunction()" class="icon">☰</a></h1>
+  
+  <nav id="paavalikko" >
+  <ul class="valikko" id="valikko">
+    <li><a class="active" href="index.html">Home</a>
+    <li><a href="tours.html">Tours</a>
+    <li><a href="gallery.html">Gallery</a>	
+    <li><a href="facts.html">Finland Facts</a>	
+    <li><a href="about.html">About us</a>
+    <li><a href="contact.html">Contact Us</a>  
+  </ul>
+  </nav>
+      
+  </div>
+
+</header>
+
+<section>
+
+<div class="contact">
+  <p>If you want to book a tour with us or would like to have more information about the tours, 
+   do not hesitate to contact us. We will be happy to help you with your tour planning.</p>    
+
+<h3>Contact Us</h3>
+    
+<p>E-mail: info@rentotours.com<br>
+     Please also check your spam folder if you do not hear back from us for a long time</p>
+    
+<p>Phone: +358 40 141 2376<br>
+     We can be reached by phone every day between 9:00 and 18:00.</p>  
+</div>
+
+<div class="contact">
+  <div>
+    <h3>Write to us</h3>
+  </div>
+    
+<form>
+   <fieldset id="personalinfo">
+   <legend>Personal information:</legend>
+  Your name:<br>
+  <input type="text" name="name">
+  <br>
+  Your e-mail:<br>
+  <input type="text" name="email">
+  <br>
+  Your phone number:<br>
+  <input type="text" name="phone">
+ <br>
+    </fieldset>
+<br>
+Your message:<br>   
+<textarea name="message" style="width:670px; height:200px;"></textarea>
+<br><br>
+<input type="submit" value="Send message">
+</form>
+</div>
+    
+
+
+</section>
+    
+<footer id="alaosa">
+    
+<div class="contactinfo">
+ <p>Quick contact <br> +358 40 141 2376 <br> <a href="#"><i class="fa fa-envelope"></i></a> info@rentotours.com </p>
+</div>
+    
+<div class="contactinfo">
+ <p>Follow us on</p>
+   <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+   <a href="#" class="fa fa-google"></a>
+   <a href="#" class="fa fa-youtube"></a>
+</div>
+    
+</footer>
+
+</body>
+</html>

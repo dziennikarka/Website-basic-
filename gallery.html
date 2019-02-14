@@ -1,0 +1,97 @@
+<!DOCTYPE html> 	
+<html lang="en">
+<head>
+
+<title>Rento Tours Ltd</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<meta name="author" content="Irina Tregub">
+
+<link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet" type="text/css">    
+<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="tyyli.css" rel="stylesheet" type="text/css">
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("valikko");
+    if (x.className == "valikko") {
+        x.className += " responsive";
+    } else {
+        x.className = "valikko";
+    }
+}
+</script>
+
+</head>
+    
+
+
+<body>
+
+<header>
+
+  <div id="mainstripe">
+  <h1><img id="logo" src="turisti1.png" alt="Rento Tours">Rento Tours Ltd <a href="javascript:void(0);" class="icon" onclick="myFunction()" >☰</a></h1>
+  
+  <nav id="paavalikko" >
+  <ul class="valikko" id="valikko">
+    <li><a class="active" href="index.html">Home</a>
+    <li><a href="tours.html">Tours</a>
+    <li><a href="gallery.html">Gallery</a>
+    <li><a href="facts.html">Finland Facts</a>	
+    <li><a href="about.html">About us</a>
+    <li><a href="contact.html">Contact Us</a>  
+  </ul>
+  </nav>
+      
+  </div>
+
+</header>
+
+<section>
+
+<div class="gallerypic" id="">
+  <img src="WinterHelsinki.jpg" alt="Winter Helsinki">   
+</div>
+    
+<div class="gallerytext">
+    <p>Helsinki is a beautiful city and busy sea port both in summer and winter.</p></div>
+    
+<div class="gallerypic" id="">
+  <img src="Esplanadi.jpg" alt="Piano music on The Esplanade, Helsinki">   
+</div>
+    
+<div class="gallerytext">
+<p>Have you heard of the green living room of Helsinki? This is a nickname of Esplanade, as on the sunny days (yes! We have them sometimes ;)) many people come here to sit on the bench or on the grass and chat. Sounds of music remind us about cosy living room concerts. </p></div>
+
+<div class="gallerypic" id="">
+  <img src="sibelius.jpg" alt="Sibelius monument"> 
+</div>
+    
+<div class="gallerytext">
+<p>Helsinki is known for its innovative and modern monuments, which once were a reason for a number of protests. Sibelius monument, devoted to one of the greatest composers, consists of 585 pipes. All the pipes are of different sizes and empty inside, so it is believed that the monument sings when it is windy outside. </p></div>
+
+</section>
+    
+<footer id="alaosa">
+    
+<div class="contactinfo">
+ <p>Quick contact <br> +358 40 141 2376 <br> <a href="#"><i class="fa fa-envelope"></i></a> info@rentotours.com </p>
+</div>
+    
+<div class="contactinfo">
+ <p>Follow us on</p>
+   <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+   <a href="#" class="fa fa-google"></a>
+   <a href="#" class="fa fa-youtube"></a>
+</div>
+    
+</footer>
+
+</body>
+</html>
